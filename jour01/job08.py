@@ -6,21 +6,22 @@ class Cercle:
     def changerRayon(self, rayon):
         self.cercle1 = rayon
     
-    def diametre(self ,diametre):
+    def diametre(self):
         diametre = self.cercle1 * 2
-        return diametre
-    def circonference(self ,circonference ):
+        print (diametre)
+    
+    def circonference(self):
         circonference = 2 * 3,14 * self.cercle1
-        return circonference
+        print (circonference)
     
     def aire(self):
-        carré = pow(self.cercle1 ,2)
+        carré = self.cercle1 * self.cercle1
         aire = carré * 3,14
         print (aire)
     
-    def afficherInfos(self ,circonference ,diametre):
-        print ("Les infos du cercle sont" ,"circonférence : ",circonference ,"diametre : ",diametre)
+    # def afficherInfos(self ,circonference ,diametre):
+    #     print ("Les infos du cercle sont" ,"circonférence : ",circonference ,"diametre : ",diametre)
 
 
 call = Cercle()
-call.afficherInfos()
+call.aire()
